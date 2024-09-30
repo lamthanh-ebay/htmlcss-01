@@ -6,6 +6,11 @@
     --primady-color: #0f1b4c;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -59,15 +64,27 @@ a {
 /* Header */
 .header {
     background: #e6f0ff;
-    height: 100vh;
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
+    border-bottom: 1px solid #d3e1f7;
+}
+
+/* Hero - wrap */
+.hero-wrap {
+    background: #e6f0ff;
+    height: calc(100vh - 91px);
     position: relative;
+    /* display: flex;
+    align-items: center; */
 }
 
 /* Navbar */
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    padding: 12px 0;
 }
 
 .navbar ul {
@@ -105,7 +122,7 @@ a {
 /* info */
 .hero {
     display: flex;
-    margin-top: 130px;
+    padding-top: 130px;
 }
 
 .hero .info {
@@ -174,8 +191,20 @@ a {
 }
 
 .clients .row-client {
-    margin-top: 96px;
+    margin-top: 70px;
     padding: 0 10px;
+}
+
+.clients .row-client a {
+    height: 90px;
+    padding: 0 42px;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.clients .row-client a:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Guides */
@@ -647,6 +676,10 @@ a {
     border-radius: 3px;
     background-color: #f9f9f9;
     color: #646464;
+}
+
+.social-item:hover {
+    background-color: #ebebeb;
 }
 
 .social-item + .social-item {
