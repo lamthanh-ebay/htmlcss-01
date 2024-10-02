@@ -18,6 +18,8 @@ html {
 body {
     font-family: "Poppins", sans-serif;
     font-size: 1.6rem;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
 }
 
 /* Common */
@@ -356,6 +358,11 @@ a {
     object-fit: cover;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
+    transition: linear 0.15s;
+}
+
+.featured-item-thumb:hover {
+    opacity: 0.9;
 }
 
 .featured-item-body {
