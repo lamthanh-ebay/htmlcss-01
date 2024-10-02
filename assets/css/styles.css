@@ -18,8 +18,9 @@ html {
 body {
     font-family: "Poppins", sans-serif;
     font-size: 1.6rem;
-    print-color-adjust: exact;
-    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact !important;
+    -webkit-print-color-adjust: exact !important;
+    text-rendering: optimizeLegibility;
 }
 
 /* Common */
