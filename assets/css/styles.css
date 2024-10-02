@@ -18,9 +18,15 @@ html {
 body {
     font-family: "Poppins", sans-serif;
     font-size: 1.6rem;
-    print-color-adjust: exact !important;
-    -webkit-print-color-adjust: exact !important;
     text-rendering: optimizeLegibility;
+}
+
+/* Tối ưu in nền ở chế độ in */
+@media print {
+    body {
+        print-color-adjust: exact !important;
+        -webkit-print-color-adjust: exact !important;
+    }
 }
 
 /* Common */
