@@ -27,6 +27,7 @@
         <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
         <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.6.0-web/css/all.css" />
         <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
 
         <!-- Animation -->
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -36,8 +37,18 @@
         <header class="header">
             <div class="content">
                 <nav class="navbar">
+                    <!-- Tablet/Mobile menu icon -->
+
+                    <label for="tablet-mobile-menu-checkbox" class="tablet-mobile-menu-icon hidden-on-pc">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                fill="currentColor"
+                                d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </label>
                     <!-- Logo -->
-                    <a href="#"><img src="./assets/img/logo.svg" alt="Besnik." /></a>
+                    <a class="logo-header" href="#"><img src="./assets/img/logo.svg" alt="Besnik." /></a>
 
                     <!-- Navigation -->
                     <ul>
@@ -54,6 +65,35 @@
                         <a href="#!" class="btn action-btn">Sign up</a>
                     </div>
                 </nav>
+            </div>
+            <!-- Header Tablet & Mobile -->
+            <div class="header-tablet-mobile hidden-on-pc">
+                <input
+                    type="checkbox"
+                    name=""
+                    id="tablet-mobile-menu-checkbox"
+                    class="tablet-mobile-menu-checkbox"
+                    hidden
+                />
+                <!-- Overlay -->
+                <label for="tablet-mobile-menu-checkbox" class="header-tablet-mobile__overlay"></label>
+
+                <!-- Mobile menu drawer -->
+                <div class="header-tablet-mobile__drawer">
+                    <!-- Logo -->
+                    <a href="#"><img src="./assets/img/logo.svg" alt="Besnik." /></a>
+
+                    <!-- Navigation -->
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li class="show-on-mobile separate"><a href="#contact">Sign in</a></li>
+                        <li class="show-on-mobile"><a href="#contact">Sign Up</a></li>
+                    </ul>
+                </div>
             </div>
         </header>
         <!-- Main -->
@@ -292,13 +332,17 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Mobile View All -->
+                    <div class="featured-link__mobile show-on-mobile" data-aos="fade-up">
+                        <a href="#!" class="featured-link__mobile-btn btn"> View All Properties </a>
+                    </div>
                 </div>
             </div>
 
             <!-- Stats -->
             <div class="stats" id="resources">
                 <div class="content">
-                    <div class="row">
+                    <div class="row row-media">
                         <div class="stats-img-blook" data-aos="fade-right">
                             <img
                                 src="./assets/img/stats-img-2.jpg"

@@ -347,12 +347,12 @@ a {
 /* Featured Body */
 .featured-list {
     margin-top: 70px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
 .featured-item {
-    flex: 1;
     background-color: #fff;
     border-radius: 12px;
     display: flex;
