@@ -206,7 +206,9 @@
     }
 
     /* HERO */
+
     .hero {
+        overflow: hidden;
         padding-top: 78px;
     }
 
@@ -240,6 +242,7 @@
 
     /* Clients */
     .clients {
+        overflow: hidden;
         margin-top: 52px;
     }
 
@@ -248,6 +251,10 @@
     }
 
     /* Guides */
+    .guides {
+        overflow: hidden;
+    }
+
     .guides-body {
         grid-template-columns: 1fr;
         row-gap: 42px;
@@ -255,6 +262,7 @@
 
     /* FEATURED */
     .featured {
+        overflow: hidden;
         padding: 80px 0;
     }
 
@@ -278,6 +286,10 @@
     }
 
     /* STATS */
+    .stats {
+        overflow: hidden;
+    }
+
     .stats-heading {
         width: 100%;
     }
